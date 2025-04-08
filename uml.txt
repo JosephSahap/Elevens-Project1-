@@ -1,0 +1,63 @@
+Card Class
++-------------------+
+|       Card       |
++-------------------+
+| - suit: string   |
+| - rank: int      |
++-------------------+
+| + Card(suit, rank)  |
+| + IsFaceCard(): bool |
+| + ToString(): string |
++-------------------+
+
+Deck Class
++----------------------+
+|        Deck         |
++----------------------+
+| - cards: List<Card> |
++----------------------+
+| + Deck()            |
+| + Shuffle()         |
+| + DrawCard(): Card  |
+| + IsEmpty(): bool   |
++----------------------+
+
+Board Class
++---------------------------------+
+|             Board               |
++---------------------------------+
+| - faceUpCards: List<Card>       |
+| - deck: Deck                    |
++---------------------------------+
+| + Board(deck: Deck)             |
+| + ReplaceCards(selected: List<Card>) |
+| + HasValidMove(): bool          |
+| + GetFaceUpCards(): List<Card>  |
++---------------------------------+
+
+Game Class
++----------------------------------+
+|              Game               |
++----------------------------------+
+| - deck: Deck                    |
+| - board: Board                   |
+| - isGameOver: bool               |
++----------------------------------+
+| + Game()                         |
+| + CheckMove(selected: List<Card>): bool |
+| + PlayMove(selected: List<Card>)  |
+| + IsWin(): bool                   |
+| + IsLoss(): bool                  |
+| + Restart()                       |
++----------------------------------+
+
+Player Class
++-----------------------------------+
+|            Player                 |
++-----------------------------------+
+| - selectedCards: List<Card>       |
++-----------------------------------+
+| + SelectCard(card: Card)          |
+| + ClearSelection()                |
+| + GetSelectedCards(): List<Card>  |
++-----------------------------------+
