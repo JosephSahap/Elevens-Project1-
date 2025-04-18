@@ -2,6 +2,7 @@
 
 Course: CSC350H
 Professor: Hao Tang
+
 Student: Joseph Sahap
 
 [First Submission – Class Design & Partial Implementation]
