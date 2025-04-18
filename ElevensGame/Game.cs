@@ -16,6 +16,12 @@ public class Game
         isGameOver = false;
     }
 
+    public Board GetBoard()
+{
+    return board;
+}
+
+
     public bool CheckMove(List<Card> selected)
     {
         if (selected.Count == 2)
